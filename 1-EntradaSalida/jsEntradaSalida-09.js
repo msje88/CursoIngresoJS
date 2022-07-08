@@ -8,13 +8,17 @@ function mostrarAumento()
 
 	let Sueldo;
 	let Resultado;
+	let porcentaje;
 
 	
 	Sueldo=document.getElementById('txtIdSueldo').value;
 
 	Sueldo=parseInt(Sueldo);
+
+	porcentaje=prompt('porcentaje');
+	porcentaje=parseInt(porcentaje);
 	
-	Resultado=Sueldo*1.10;
+	Resultado=((Sueldo*porcentaje)/100)+Sueldo;
 	document.getElementById('txtIdResultado').value=Resultado;
 
 }
