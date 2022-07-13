@@ -1,6 +1,15 @@
+/*
+Al ingresar una edad que sea igual a 15, mostrar el mensaje "niña bonita".
+*/
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	let edad;
+	edad=document.getElementById('txtIdEdad').value;
+	edad=parseInt(edad);
+	if(edad==15)//tomo la edad 
+	{
+		alert("Niña bonita");
+
+		}
 
 }//FIN DE LA FUNCIÓN
