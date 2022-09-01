@@ -5,21 +5,23 @@ Al ingresar una edad debemos informar si la persona es mayor de edad (mas de 18 
 function mostrar()
 {
 		let edad;
+		let mensaje;
 	edad=document.getElementById('txtIdEdad').value;
 	edad=parseInt(edad);
-	if(edad<13)//tomo la edad 
+	if(edad>17)//si esto es false descarta a los mayores 
 	{
-		alert("Niño");
+		mensaje="Mayor de edad";
 
-		}else
-		if(edad<18)
-			{
-		alert("Adolescente");
-
-		}else
-		if(edad>=18)
-			{
-		alert("Mayor de edad");
+	}
+	else
+	{
+		mensaje="Adolescente";
+		if(edad<13)
+		{
+		mensaje="Niño";
 		}
+	}
+		alert(mensaje);
+		
 
 }//FIN DE LA FUNCIÓN
